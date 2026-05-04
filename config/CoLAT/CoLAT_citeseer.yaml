@@ -1,5 +1,5 @@
 model:
-  method: cagnn
+  method: CoLAT
   n_hidden: 16
   n_layer: 2
   act: F.relu
@@ -9,8 +9,8 @@ model:
   output_layer: false
 
 training:
-  lr: 0.01
-  weight_decay: 0.001
+  lr: 0.001
+  weight_decay: 0.01
   n_epochs: 200
   start_epoch: 1
   mi_steps: 1

@@ -36,9 +36,9 @@ def convert_search_space_to_wandb(sspec: dict):
 
 def build_sweep(dataset, poison_type, poison_rate, sweep_method='random', metric_name='test',
                 metric_goal='maximize', seed=None, device='cuda:0', tags=None, backbone=None):
-    ss_path = os.path.join('config', '_search_space', f"cagnn_{dataset}.json")
+    ss_path = os.path.join('config', '_search_space', f"CoLAT_{dataset}.json")
     if not os.path.exists(ss_path):
-        ss_path = os.path.join('config', '_search_space', 'cagnn.json')
+        ss_path = os.path.join('config', '_search_space', 'CoLAT.json')
     if not os.path.exists(ss_path):
         raise FileNotFoundError(f"Search space JSON not found: {ss_path}")
     with open(ss_path, 'r') as f:

@@ -50,7 +50,7 @@ Key arguments:
 
 ## Configuration
 
-Per-dataset training configs live in `config/cagnn/`. The hyperparameter search space is in `config/_search_space/cagnn.json` — only `lr`, `weight_decay`, `margin`, and `flip_budget` are tuned.
+Per-dataset training configs live in `config/CoLAT/`. The hyperparameter search space is in `config/_search_space/CoLAT.json` — only `lr`, `weight_decay`, `margin`, and `flip_budget` are tuned.
 
 ## W&B
 

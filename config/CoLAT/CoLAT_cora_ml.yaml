@@ -1,5 +1,5 @@
 model:
-  method: cagnn
+  method: CoLAT
   n_hidden: 16
   n_layer: 2
   act: F.relu

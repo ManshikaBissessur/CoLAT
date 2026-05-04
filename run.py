@@ -5,7 +5,7 @@ import torch
 from utils.dataloader import Dataset
 from utils.tools import load_conf, setup_seed
 from utils.poisonlabel import label_process
-from predictor.CAGNN_Predictor import cagnn_Predictor
+from predictor.CoLAT_Predictor import CoLAT_Predictor
 
 try:
     import wandb
@@ -45,7 +45,7 @@ if __name__ == '__main__':
 
     setup_seed(args.seed)
 
-    model_conf = load_conf(None, 'cagnn', args.dataset)
+    model_conf = load_conf(None, 'CoLAT', args.dataset)
 
     if WANDB_AVAILABLE and os.environ.get('NO_WANDB', '0') != '1':
         try:
@@ -98,7 +98,7 @@ if __name__ == '__main__':
         model_conf.model['n_classes'] = data.n_classes
 
         t0 = time.time()
-        predictor = cagnn_Predictor(model_conf, data, args.device)
+        predictor = CoLAT_Predictor(model_conf, data, args.device)
         predictor.modified_mask = modified_mask
         result = predictor.train()
         run_time = time.time() - t0

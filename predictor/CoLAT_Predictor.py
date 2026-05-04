@@ -1,5 +1,5 @@
 from predictor.Base_Predictor import Predictor
-from predictor.module.CAGNN import ContrastiveGNN, contrastive_loss_and_noise_score
+from predictor.module.CoLAT import ContrastiveGNN, contrastive_loss_and_noise_score
 from predictor.module.GNNs import build_backbone
 import time
 import torch
@@ -12,7 +12,7 @@ except Exception:
     _wandb = None
 
 
-class cagnn_Predictor(Predictor):
+class CoLAT_Predictor(Predictor):
     def __init__(self, conf, data, device="cuda:0"):
         super().__init__(conf, data, device)
 
