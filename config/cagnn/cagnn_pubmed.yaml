@@ -1,0 +1,25 @@
+model:
+  method: cagnn
+  n_hidden: 16
+  n_layer: 2
+  act: F.relu
+  dropout: 0.5
+  norm_info: ~
+  input_layer: false
+  output_layer: false
+
+training:
+  lr: 0.01
+  weight_decay: 0.001
+  n_epochs: 200
+  start_epoch: 1
+  mi_steps: 1
+  mi_pretrain_epochs: 1
+  mi_update_interval: 1
+  margin: 0.5
+  flip_budget: 5
+  patience: ~
+  criterion: metric
+
+dataset:
+  sparse: true

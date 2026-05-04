@@ -1,0 +1,9 @@
+split:
+  split_type: default
+
+norm:
+  feat_norm: false
+  adj_norm: false
+
+modify:
+  add_self_loop: false

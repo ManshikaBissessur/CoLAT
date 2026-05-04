@@ -1,0 +1,14 @@
+--find-links https://data.pyg.org/whl/torch-2.9.1+cu128.html
+
+torch==2.9.1
+torch-geometric==2.7.0
+torch-scatter==2.1.2
+torch-sparse==0.6.18
+torch-cluster==1.6.3
+torch-spline-conv==1.2.2
+pyg-lib==0.6.0
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+ruamel.yaml==0.18.17
+wandb==0.23.1
