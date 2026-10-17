@@ -59,3 +59,20 @@ W&B logging is enabled automatically if `wandb` is installed. Disable it with:
 ```bash
 NO_WANDB=1 python run.py ...
 ```
+
+---
+
+## :open_book: Citation
+
+If you use this code in your research, please cite our paper:
+
+```bibtex
+@article{colat,
+      title={Contrastive Adversarial Training for Robust Graph Neural Networks under Label Poisoning},
+      author={Bissessur, Manshika Charvi and Bal, Melis Ilayda and Muehlebach, Michael},
+      year={2026},
+      journal={Neural Information Processing Systems (NeurIPS)},
+}
+```
+
+
